@@ -17,7 +17,7 @@ header {
     padding: 30px;
 }
 
-header > a {
+header>a {
     text-decoration: none;
     color: #ffffff;
     margin: auto;
@@ -25,9 +25,10 @@ header > a {
     margin: 5px;
 }
 
-header > a:hover {
+header>a:hover {
     text-decoration: underline;
     color: goldenrod;
+    background-color: white;
 }
 
 .principal {
@@ -36,6 +37,10 @@ header > a:hover {
     display: flex;
     align-items: center;
     justify-content: center
+}
+
+.principal-receitas {
+    background-color: rgb(231, 152, 123);
 }
 
 #img {
@@ -49,13 +54,43 @@ header > a:hover {
     text-align: center;
 }
 
-.receita {
-    width: 300px;
-    height: 600px;
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 20px;
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 450px;
+    height: 800px;
+    background-color: #ebe6b8;
+    border: 1px solid black;
     margin: 20px;
+}
+
+ul {
+    list-style-position: inside;
+    padding-left: 30%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+}
+
+#foto {
+    width: 430px;
+    height: 400px;
+
+}
+
+.imagem-r {
+    display: flex;
+    justify-content: center;
+}
+
+.texto {
+    font-size: 1.3em;
+    padding-top: 5px;
+    padding-right: 12px;
+    padding-left: 5px;
 }
 
 footer {
@@ -67,4 +102,51 @@ footer {
     left: 0px;
     right: 0px;
     margin-bottom: 0px;
+}
+
+@media screen and (max-width: 568px) {
+    header {
+        text-align: center;
+    }
+    .container {
+        display: inline-block;
+    }
+
+    .imagem-r {
+        display: inline-block;
+    }
+
+    .card {
+        margin: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        text-align: center;
+    }
+    .container {
+        display: inline-block;
+    }
+
+    .imagem-r {
+        display: inline-block;
+    }
+
+    .card {
+        margin: 20px;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .card {
+        width: 400px;
+        height: 650px;
+    }
+
+    #foto {
+        width: 380px;
+        height: 300px;
+    }
 }
