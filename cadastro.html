@@ -11,52 +11,66 @@
     <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
     <title>Menu</title>
     <style>
-        * {
-            font-family: 'Tilt Neon', cursive;
-            overflow-x: hidden;
-        }
-        #ativo {
-            color: gray;
-        }
+    * {
+        font-family: 'Tilt Neon', cursive;
+        overflow: hidden;
+    }
 
-        header {
-            background-color: #1a1d1a;
-            height: 45px;
-            padding: 5px;
-        }
+    #ativo {
+        color: gray;
+    }
 
-        header>a {
-            text-decoration: none;
-            color: #ffffff;
-            font-size: 1.2em;
-            margin: 5px;
-        }
+    #m-menu {
+        background-color: #1a1d1a;
+        height: 35px;
+        padding: 5px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        width: 100%;
+    }
+    
+    header {
+        background-color: #1a1d1a;
+        height: 45px;
+        padding: 5px;
+    }
 
-        header>a:hover {
-            text-decoration: underline;
-            color: goldenrod;
-            background-color: white;
-        }
-        .principal-cadastro {
-            background-color: rgb(231, 152, 123);
-            height: 100vh;
-        }
-        footer {
-            background-color: black;
-            color: white;
-            text-align: center;
-            bottom: 0px;
-            left: 0px;
-            right: 0px;
-            margin-bottom: 0px;
-        }
-        footer > p {
-            margin: 0px;
-        }
+    header>a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1.2em;
+        margin: 5px;
+    }
+
+    header>a:hover {
+        text-decoration: underline;
+        color: goldenrod;
+        background-color: white;
+    }
+    .principal-cadastro {
+        background-color: rgb(231, 152, 123);
+        height: 100vh;
+        padding-top: 50px;
+    }
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      position: fixed;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      margin-bottom: 0px;
+    }
+    footer > p {
+        margin: 0px;
+    }
     </style>
 </head>
 <body>
-    <header>
+    <header id="m-menu">
         <a href="index.html">Home</a>
         <a href="receitas.html">Receitas</a>
         <a href="cadastro.html" id="ativo">Cadastro</a>
@@ -107,7 +121,7 @@
                   </select>
                   </div>
                   <div class="text-center py-2">
-                    <button type="submit" class="btn btn-outline-success">Cadastrar</button>
+                    <button type="submit" class="btn btn-success">Cadastrar</button>
                     <input type="hidden" name="_subject" value="Novo Cadastro!">
                     <input type="text" name="_honey" style="display: none;">
                     <input type="hidden" name="_captcha" value="false">
@@ -116,7 +130,7 @@
               </form>
         </div>
     </main>
-    <footer>
+    <footer id="footer-main">
         <p>©️Mamma-Mia 2023</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
