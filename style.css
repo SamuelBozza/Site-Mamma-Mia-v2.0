@@ -16,7 +16,7 @@
 
 header {
     background-color: #1a1d1a;
-    height: 25px;
+    height: 35px;
     padding: 5px;
 }
 
@@ -37,6 +37,8 @@ header>a:hover {
     height: 100vh;
     background-color: rgb(231, 152, 123);
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .principal-receitas {
