@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
+/*Importação de Fonte*/
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+/**/
 
 * {
     margin: 0px;
@@ -14,13 +16,13 @@
 
 header {
     background-color: #1a1d1a;
-    padding: 30px;
+    height: 25px;
+    padding: 5px;
 }
 
 header>a {
     text-decoration: none;
     color: #ffffff;
-    margin: auto;
     font-size: 1.2em;
     margin: 5px;
 }
@@ -32,15 +34,14 @@ header>a:hover {
 }
 
 .principal {
-    height: 88.88vh;
+    height: 100vh;
     background-color: rgb(231, 152, 123);
     display: flex;
-    align-items: center;
-    justify-content: center
 }
 
 .principal-receitas {
     background-color: rgb(231, 152, 123);
+    height: 100vh;
 }
 
 #img {
@@ -59,9 +60,14 @@ header>a:hover {
     justify-content: center;
 }
 
+.container-2{
+    display: flex;
+    justify-content: center;
+}
+
 .card {
     width: 450px;
-    height: 800px;
+    height: 720px;
     background-color: #ebe6b8;
     border: 1px solid black;
     margin: 20px;
@@ -93,60 +99,52 @@ ul {
     padding-left: 5px;
 }
 
+.text-embreve {
+    position: relative;
+    background-color: white;
+    border: 2px solid black;
+    padding-top: 7px;
+}
+
 footer {
     background-color: black;
     color: white;
     text-align: center;
-    position: fixed;
     bottom: 0px;
     left: 0px;
     right: 0px;
     margin-bottom: 0px;
 }
 
-@media screen and (max-width: 568px) {
+/*Responsivo*/
+
+@media screen and (max-width: 945px) { /*Smartphone/Celular*/
     header {
         text-align: center;
     }
-    .container {
-        display: inline-block;
-    }
-
-    .imagem-r {
-        display: inline-block;
-    }
-
     .card {
-        margin: 20px;
-        margin-bottom: 30px;
+        width: 500px;
+    }
+    .principal-receitas {
+        height: 100%;
+    }
+    .container {
+        display: grid;
+    }
+    .container-2 {
+        display: grid;
     }
 }
 
-@media screen and (max-width: 1024px) {
-    header {
-        text-align: center;
-    }
-    .container {
-        display: inline-block;
-    }
-
-    .imagem-r {
-        display: inline-block;
-    }
-
+@media screen and (max-width: 1440px) { /*Laptop/Notebook*/
     .card {
-        margin: 20px;
-        margin-bottom: 30px;
+        width: 300px;
     }
-}
-@media screen and (max-width: 1440px) {
-    .card {
-        width: 400px;
-        height: 650px;
-    }
-
     #foto {
-        width: 380px;
+        width: 280px;
         height: 300px;
+    }
+    .principal-receitas {
+        height: 100%;
     }
 }
