@@ -71,7 +71,7 @@ header>a:hover {
     text-align: center;
 }
 
-.container{
+.container-m{
     display: flex;
     justify-content: center;
 }
@@ -81,13 +81,13 @@ header>a:hover {
     justify-content: center;
 }
 
-.card {
+/*.card {
     width: 450px;
     height: 720px;
     background-color: #ebe6b8;
     border: 1px solid black;
     margin: 20px;
-}
+} */
 
 ul {
     list-style-position: inside;
@@ -98,9 +98,8 @@ ul {
 }
 
 #foto {
-    width: 430px;
-    height: 400px;
-
+    width: 100%;
+    height: 300px;
 }
 
 .imagem-r {
@@ -146,10 +145,10 @@ footer {
 
 /*Responsivo*/
 
-@media screen and (max-width: 945px) { /*Smartphone/Celular*/
-    .card {
+/*@media screen and (max-width: 945px) { /*Smartphone/Celular*/
+    /*.card {
         width: 500px;
-    }
+    }*/
     .principal-receitas {
         height: 100%;
     }
@@ -162,9 +161,9 @@ footer {
 }
 
 @media screen and (max-width: 1440px) { /*Laptop/Notebook*/
-    .card {
+    /*.card {
         width: 300px;
-    }
+    }*/
     #foto {
         width: 280px;
         height: 300px;
@@ -173,3 +172,4 @@ footer {
         height: 100%;
     }
 }
+*/
